@@ -1,0 +1,20 @@
+{
+  "name": "circuit-chat-app",
+  "productName": "Circuit Chat",
+  "version": "1.0.2",
+  "description": "Cicuit tray chat app written with Circuit JS SDK",
+  "author": "Roger Urscheler <roger.urscheler@atos.net>",
+  "license": "Apache-2.0",
+  "main": "main/index.js",
+  "dependencies": {
+    "auto-launch": "^5.0.5",
+    "circuit-sdk": "latest",
+    "electron-oauth2": "git://github.com/rogeru/electron-oauth2.git#master",
+    "electron-settings": "^3.2.0",
+    "hyperhtml": "^2.30.5",
+    "node-fetch": "^2.6.0",
+    "opn": "^5.1.0",
+    "request": "^2.88.0",
+    "sharp": "^0.23.0"
+  }
+}

@@ -1,0 +1,22 @@
+.button {
+  width: 75px;
+  padding: 5px 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: .875em;
+  outline: none;
+}
+.button:hover {
+  background-position: 0 -48px;
+}
+.button:active {
+  background-position: 0 top;
+  position: relative;
+  top: 1px;
+  padding: 6px 10px 4px;
+}
+.button.red { background-color: #c22026; }
+.button.green { background-color: #88c541; }
+.button.blue { background-color: mediumblue; }

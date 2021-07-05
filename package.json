@@ -1,0 +1,39 @@
+{
+  "name": "circuit-chat-app",
+  "productName": "Circuit Chat",
+  "description": "Cicuit tray chat app written with Circuit JS SDK",
+  "main": "./app/main",
+  "scripts": {
+    "start": "electron app",
+    "reinstall": "rm -rf node_modules; rm -rf app/node_modules; npm install",
+    "postinstall": "electron-builder install-app-deps",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.unify.circuit-chat",
+    "asar": false,
+    "mac": {
+      "category": "public.app-category.business"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    }
+  },
+  "repository": "https://github.com/circuit/circuit-chat-app",
+  "keywords": [
+    "Circuit",
+    "WebRTC",
+    "electron",
+    "SDK",
+    "API",
+    "chat"
+  ],
+  "author": "Roger Urscheler <roger.urscheler@unify.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "electron": "^7.3.3",
+    "electron-builder": "^21.2.0"
+  }
+}

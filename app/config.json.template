@@ -1,0 +1,19 @@
+{
+  "domains": [
+    {
+      "domain": "circuitsandbox.net",
+      "client_id": "",
+      "client_secret": "",
+      "redirectUri": "com.circuit-chat.app:/callback",
+      "scope": "ALL"
+    },
+    {
+      "domain": "eu.yourcircuit.com",
+      "client_id": "",
+      "client_secret": "",
+      "redirectUri": "com.circuit-chat.app:/callback",
+      "scope": "ALL"
+    }
+  ],
+  "sdkLogLevel": 4
+}

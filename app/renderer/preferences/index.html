@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Preferences</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        font-size: 13px;
+      }
+      .container {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      h4 {
+        margin-bottom: 0px;
+      }
+      select {
+        width: 200px;
+      }
+      .conv-list {
+        margin-top: 5px;
+        margin-bottom: 20px;
+      }
+      .conv-list>div {
+        padding: 2px;
+      }
+      .spacer {
+        flex-grow: 1;
+      }
+      .button {
+        align-self: flex-end;
+      }
+    </style>
+    <link rel="stylesheet" href="../common/button.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h4>Domain</h4>
+      <p>Select the domain to connect to.</p>
+      <select id="domain">
+        <option value="eu.yourcircuit.com">eu.yourcircuit.com</option>
+        <option value="circuitsandbox.net">circuitsandbox.net</option>
+      </select>
+
+      <h4>Tray users</h4>
+      <p>Select the 'Favorites' option to use the first 5 direct conversation, or enter the conversation IDs of up to five direct conversations. You can copy the conversation ID from the browser URL.</p>
+      <div>
+        <input type="radio" id="favorites" checked name="conversations" onclick="toggle()" value="favorites">
+        <label for="favorites">Favorites</label>
+
+        <input type="radio" id="custom" name="conversations" onclick="toggle()" value="custom">
+        <label for="custom">Custom</label>
+      </div>
+      <div class="conv-list" style="display:none">
+        <div>1: <input type="text" id="conv1" size="40" placeholder="E.g. 495fdc21-716a-4acf-be59-7ad2578e702f"/></div>
+        <div>2: <input type="text" id="conv2" size="40"/></div>
+        <div>3: <input type="text" id="conv3" size="40"/></div>
+        <div>4: <input type="text" id="conv4" size="40"/></div>
+        <div>5: <input type="text" id="conv5" size="40"/></div>
+      </div>
+      <div class="spacer"></div>
+      <button class="button blue" onclick="save()">Save</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
