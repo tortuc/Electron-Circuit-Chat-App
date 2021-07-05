@@ -1,4 +1,4 @@
-# Circuit Chat app
+# Electron Circuit Chat app
 
 Chat with your favorite users quickly via this native (Windows & Mac) tray application built with electron and the Circuit JS SDK. Trays for up to five users are created which allow chat and calls via Circuit.
 
